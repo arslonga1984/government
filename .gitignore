@@ -11,3 +11,6 @@ data/email_preview_*.html
 
 # 임시 파일
 *.tmp.*
+
+# SQLite DB (S3에서 관리)
+subsidy_crawler.db

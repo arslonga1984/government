@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: 코드 체크아웃
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Python 3.11 설정
         uses: actions/setup-python@v5
@@ -27,6 +25,17 @@ jobs:
           playwright install chromium
           playwright install-deps
 
+      - name: AWS 자격증명 설정
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: S3에서 DB 다운로드
+        run: |
+          aws s3 cp s3://subsidy-crawler-db/subsidy_crawler.db ./subsidy_crawler.db || echo "No existing DB, starting fresh"
+
       - name: 크롤링 → 매칭 → 이메일 발송
         env:
           BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
@@ -36,14 +45,11 @@ jobs:
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          LLM_MATCHING: "false"
-          MATCH_SCORE_THRESHOLD: "40"
+          LLM_MATCHING: ${{ secrets.LLM_MATCHING }}
+          MATCH_SCORE_THRESHOLD: ${{ secrets.MATCH_SCORE_THRESHOLD }}
         run: python main.py run
 
-      - name: DB 커밋 (중복 발송 방지)
+      - name: DB를 S3에 업로드
+        if: always()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add subsidy_crawler.db
-          git diff --staged --quiet || git commit -m "chore: DB 업데이트 $(date '+%Y-%m-%d')"
-          git push
+          aws s3 cp ./subsidy_crawler.db s3://subsidy-crawler-db/subsidy_crawler.db
