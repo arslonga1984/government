@@ -1,0 +1,13 @@
+# 환경 변수 (절대 커밋 금지)
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# 이메일 미리보기 (임시 파일)
+data/email_preview_*.html
+
+# 임시 파일
+*.tmp.*

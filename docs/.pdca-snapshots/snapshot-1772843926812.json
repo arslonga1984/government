@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-03-07T00:38:46.810Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-03-07T00:35:54.809Z",
+    "activeFeatures": [
+      "config",
+      "jiran_government_project"
+    ],
+    "primaryFeature": "config",
+    "features": {
+      "config": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T08:00:13.522Z",
+          "lastUpdated": "2026-03-07T00:33:45.543Z"
+        },
+        "lastFile": "C:\\Users\\ecoto\\jiran_government_project\\config\\settings.py"
+      },
+      "jiran_government_project": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-03-06T08:00:56.243Z",
+          "lastUpdated": "2026-03-07T00:35:54.809Z"
+        },
+        "lastFile": "C:\\Users\\ecoto\\jiran_government_project\\notifier.py"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-03-06T07:56:38.477Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-03-07T00:35:54.809Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-03-06T08:00:13.522Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:00:32.967Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:00:56.243Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:01:34.581Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:01:57.252Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:02:28.989Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:02:45.201Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:07:19.709Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:08:24.329Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:08:27.417Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:26:36.580Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T08:54:37.571Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:52:26.085Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:52:38.102Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:53:18.628Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:53:20.694Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:54:47.915Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:54:53.740Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:55:44.669Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T22:58:24.316Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-06T23:00:36.504Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-07T00:33:45.543Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-03-07T00:35:54.809Z",
+        "feature": "jiran_government_project",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

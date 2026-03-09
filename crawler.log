@@ -1,0 +1,330 @@
+2026-03-06 17:08:09,795 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:08:09,956 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:08:10,159 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-06 17:08:10,916 [INFO] crawler: [smtech] 완료 — 15건 수집, 15건 신규
+2026-03-06 17:10:33,924 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:10:34,091 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-06 17:10:34,403 [INFO] crawler: [smtech] 완료 - 15건 수집, 0건 신규
+2026-03-06 17:10:46,546 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:10:46,711 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-06 17:10:46,895 [INFO] crawler: [bizinfo] API 결과 없음 — HTML 폴백
+2026-03-06 17:10:47,145 [INFO] crawler: [bizinfo] 완료 - 0건 수집, 0건 신규
+2026-03-06 17:10:59,609 [INFO] matcher: 매칭 대상 공고: 15건
+2026-03-06 17:10:59,610 [INFO] matcher: 임계값(40) 이상 매칭 없음
+2026-03-06 17:10:59,805 [INFO] notifier: 미리보기할 매칭 결과가 없습니다.
+2026-03-06 17:16:01,248 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:16:01,464 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-06 17:16:01,566 [INFO] crawler: [bizinfo] API 결과 없음 — HTML 폴백
+2026-03-06 17:16:01,819 [INFO] crawler: [bizinfo] 완료 - 0건 수집, 0건 신규
+2026-03-06 17:18:30,163 [INFO] notifier: 미리보기 저장: data\email_preview_20260306_171830.html
+2026-03-06 17:22:18,400 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:22:18,607 [INFO] crawler: [kstartup] 크롤링 시작
+2026-03-06 17:22:27,116 [INFO] crawler: [kstartup] 완료 - 82건 수집, 82건 신규
+2026-03-06 17:27:02,132 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-06 17:27:02,309 [INFO] crawler: [kstartup] 크롤링 시작
+2026-03-06 17:27:05,548 [INFO] crawler: [kstartup] 완료 - 15건 수집, 15건 신규
+2026-03-06 17:29:22,150 [ERROR] notifier: 이메일 발송 실패: 'ascii' codec can't encode character '\uc571' in position 31: ordinal not in range(128)
+2026-03-06 17:36:05,810 [ERROR] notifier: 이메일 발송 실패: 'ascii' codec can't encode character '\uc571' in position 31: ordinal not in range(128)
+2026-03-06 17:37:51,731 [INFO] notifier: 이메일 발송 완료 → minho@jiran.com
+2026-03-07 07:49:14,665 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:15,152 [INFO] crawler: [cloudsup] 크롤링 시작
+2026-03-07 07:49:15,500 [INFO] crawler: [cloudsup] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:15,847 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:16,080 [INFO] crawler: [nipa] 크롤링 시작
+2026-03-07 07:49:16,185 [INFO] crawler: [nipa] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:16,574 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:16,828 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 07:49:16,962 [INFO] crawler: [nia] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:17,254 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:17,495 [INFO] crawler: [kdata] 크롤링 시작
+2026-03-07 07:49:17,834 [INFO] crawler: [kdata] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:18,146 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:18,396 [INFO] crawler: [mssmiv] 크롤링 시작
+2026-03-07 07:49:18,518 [ERROR] crawler: [mssmiv] HTML 크롤링 실패: 404 Client Error:  for url: https://www.mssmiv.com/portal/notice/NTC0010L.do
+2026-03-07 07:49:18,519 [INFO] crawler: [mssmiv] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:18,835 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:19,090 [INFO] crawler: [iitp] 크롤링 시작
+2026-03-07 07:49:19,276 [INFO] crawler: [iitp] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:19,576 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:19,854 [INFO] crawler: [kisa] 크롤링 시작
+2026-03-07 07:49:20,043 [ERROR] crawler: [kisa] HTML 크롤링 실패: 500 Server Error: 500 for url: https://www.kisa.or.kr/2060204/form?postSeq=&lang_type=KO
+2026-03-07 07:49:20,045 [INFO] crawler: [kisa] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:20,379 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:20,652 [INFO] crawler: [kiat] 크롤링 시작
+2026-03-07 07:49:20,760 [ERROR] crawler: [kiat] HTML 크롤링 실패: 404 Client Error: 404 for url: https://www.kiat.or.kr/site/main/biz/bizList.do
+2026-03-07 07:49:20,761 [INFO] crawler: [kiat] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:21,113 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:21,361 [INFO] crawler: [iris] 크롤링 시작
+2026-03-07 07:49:21,473 [ERROR] crawler: [iris] HTML 크롤링 실패: 404 Client Error: Not Found for url: https://www.iris.go.kr/contents/retrieveAnnouncementList.do
+2026-03-07 07:49:21,475 [INFO] crawler: [iris] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:21,774 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:22,125 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 07:49:22,250 [INFO] crawler: [semas] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:22,561 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:22,835 [INFO] crawler: [smartfactory] 크롤링 시작
+2026-03-07 07:49:22,946 [ERROR] crawler: [smartfactory] HTML 크롤링 실패: 404 Client Error: 404 for url: https://www.smart-factory.kr/subfixList.do?menuId=6
+2026-03-07 07:49:22,947 [INFO] crawler: [smartfactory] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:49:23,280 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:49:23,525 [INFO] crawler: [koneps] 크롤링 시작
+2026-03-07 07:49:44,572 [ERROR] crawler: [koneps] HTML 크롤링 실패: HTTPSConnectionPool(host='www.g2b.go.kr', port=8101): Max retries exceeded with url: /ep/tbid/tbBidListSearch.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.g2b.go.kr', port=8101) at 0x196d470e7b0>, 'Connection to www.g2b.go.kr timed out. (connect timeout=30)'))
+2026-03-07 07:49:44,572 [INFO] crawler: [koneps] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:52:48,418 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:52:48,718 [INFO] crawler: [mssmiv] 크롤링 시작
+2026-03-07 07:52:48,803 [ERROR] crawler: [mssmiv] HTML 크롤링 실패: 404 Client Error:  for url: https://www.mssmiv.com/portal/portal/board/BoardList?bbsId=1
+2026-03-07 07:52:48,804 [INFO] crawler: [mssmiv] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:52:49,072 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:52:49,390 [INFO] crawler: [kisa] 크롤링 시작
+2026-03-07 07:52:50,118 [INFO] crawler: [kisa] 완료 - 10건 수집, 10건 신규
+2026-03-07 07:52:50,389 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:52:50,705 [INFO] crawler: [kiat] 크롤링 시작
+2026-03-07 07:52:50,873 [INFO] crawler: [kiat] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:52:51,148 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:52:51,381 [INFO] crawler: [iris] 크롤링 시작
+2026-03-07 07:52:51,491 [INFO] crawler: [iris] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:53:46,559 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:53:46,862 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-07 07:53:47,215 [INFO] crawler: [bizinfo] API 호출 — 페이지 1, 100건
+2026-03-07 07:53:48,014 [INFO] crawler: [bizinfo] API 호출 — 페이지 2, 100건
+2026-03-07 07:53:48,833 [INFO] crawler: [bizinfo] API 호출 — 페이지 3, 100건
+2026-03-07 07:53:49,641 [INFO] crawler: [bizinfo] API 호출 — 페이지 4, 100건
+2026-03-07 07:53:50,426 [INFO] crawler: [bizinfo] API 호출 — 페이지 5, 100건
+2026-03-07 07:53:51,206 [INFO] crawler: [bizinfo] API 호출 — 페이지 6, 100건
+2026-03-07 07:53:52,001 [INFO] crawler: [bizinfo] API 호출 — 페이지 7, 100건
+2026-03-07 07:53:52,780 [INFO] crawler: [bizinfo] API 호출 — 페이지 8, 100건
+2026-03-07 07:53:53,545 [INFO] crawler: [bizinfo] API 호출 — 페이지 9, 100건
+2026-03-07 07:53:54,357 [INFO] crawler: [bizinfo] API 호출 — 페이지 10, 100건
+2026-03-07 07:53:55,508 [INFO] crawler: [bizinfo] API 호출 — 페이지 11, 10건
+2026-03-07 07:53:55,509 [INFO] crawler: [bizinfo] API 결과 없음 — HTML 폴백
+2026-03-07 07:53:56,334 [INFO] crawler: [bizinfo] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:53:56,711 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:53:57,006 [INFO] crawler: [cloudsup] 크롤링 시작
+2026-03-07 07:53:57,607 [INFO] crawler: [cloudsup] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:53:57,967 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:53:58,251 [INFO] crawler: [nipa] 크롤링 시작
+2026-03-07 07:53:58,350 [INFO] crawler: [nipa] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:53:58,607 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:53:58,835 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 07:53:58,973 [INFO] crawler: [nia] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:53:59,338 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:53:59,598 [INFO] crawler: [kdata] 크롤링 시작
+2026-03-07 07:54:00,116 [INFO] crawler: [kdata] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:54:00,430 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:00,676 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-07 07:54:01,569 [INFO] crawler: [smtech] 완료 - 15건 수집, 0건 신규
+2026-03-07 07:54:01,910 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:02,148 [INFO] crawler: [mssmiv] 크롤링 시작
+2026-03-07 07:54:02,872 [INFO] crawler: [mssmiv] 완료 - 15건 수집, 15건 신규
+2026-03-07 07:54:03,141 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:03,400 [INFO] crawler: [iitp] 크롤링 시작
+2026-03-07 07:54:03,898 [INFO] crawler: [iitp] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:54:04,207 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:04,453 [INFO] crawler: [kisa] 크롤링 시작
+2026-03-07 07:54:05,308 [INFO] crawler: [kisa] 완료 - 10건 수집, 0건 신규
+2026-03-07 07:54:05,643 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:05,940 [INFO] crawler: [iris] 크롤링 시작
+2026-03-07 07:54:06,274 [INFO] crawler: [iris] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:54:06,528 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:54:06,779 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 07:54:07,191 [INFO] crawler: [semas] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:02,236 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:02,476 [INFO] crawler: [nipa] 크롤링 시작
+2026-03-07 07:55:07,850 [INFO] crawler: [nipa] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:08,145 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:08,390 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 07:55:10,247 [INFO] crawler: [nia] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:10,535 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:10,769 [INFO] crawler: [kdata] 크롤링 시작
+2026-03-07 07:55:13,388 [INFO] crawler: [kdata] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:13,659 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:13,879 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 07:55:16,340 [INFO] crawler: [semas] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:16,640 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:16,891 [INFO] crawler: [kiat] 크롤링 시작
+2026-03-07 07:55:23,145 [INFO] crawler: [kiat] 완료 - 37건 수집, 37건 신규
+2026-03-07 07:55:52,103 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:52,311 [INFO] crawler: [nipa] 크롤링 시작
+2026-03-07 07:55:54,148 [INFO] crawler: [nipa] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:54,452 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:54,684 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 07:55:56,505 [INFO] crawler: [nia] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:56,765 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:55:57,023 [INFO] crawler: [kdata] 크롤링 시작
+2026-03-07 07:55:59,646 [INFO] crawler: [kdata] 완료 - 0건 수집, 0건 신규
+2026-03-07 07:55:59,941 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 07:56:00,149 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 07:56:02,601 [INFO] crawler: [semas] 완료 - 0건 수집, 0건 신규
+2026-03-07 08:00:44,109 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:00:44,348 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-07 08:00:44,761 [INFO] crawler: [smtech] 완료 - 15건 수집, 0건 신규
+2026-03-07 08:00:45,054 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:00:45,304 [INFO] crawler: [mssmiv] 크롤링 시작
+2026-03-07 08:00:45,597 [INFO] crawler: [mssmiv] 완료 - 15건 수집, 0건 신규
+2026-03-07 08:00:45,880 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:00:46,122 [INFO] crawler: [kisa] 크롤링 시작
+2026-03-07 08:00:46,817 [INFO] crawler: [kisa] 완료 - 10건 수집, 0건 신규
+2026-03-07 08:00:47,070 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:00:47,325 [INFO] crawler: [kiat] 크롤링 시작
+2026-03-07 08:00:53,223 [INFO] crawler: [kiat] 완료 - 37건 수집, 0건 신규
+2026-03-07 08:00:53,502 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:00:53,723 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 08:01:00,024 [INFO] crawler: [nia] 완료 - 28건 수집, 28건 신규
+2026-03-07 08:01:00,363 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 08:01:00,624 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 08:01:06,098 [INFO] crawler: [semas] 완료 - 27건 수집, 27건 신규
+2026-03-07 09:35:59,779 [INFO] notifier: 미리보기할 매칭 결과가 없습니다.
+2026-03-07 09:36:07,626 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 09:36:07,980 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-07 09:36:08,454 [INFO] crawler: [smtech] 완료 - 15건 수집, 0건 신규
+2026-03-07 09:36:15,199 [INFO] notifier: 미리보기 저장: data\email_preview_20260307_093615.html
+2026-03-07 09:48:49,610 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 09:48:49,926 [INFO] main: === 전체 파이프라인 시작 ===
+2026-03-07 09:48:49,933 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-07 09:48:50,356 [INFO] crawler: [bizinfo] API 호출 — 페이지 1, 100건
+2026-03-07 09:48:51,206 [INFO] crawler: [bizinfo] API 호출 — 페이지 2, 100건
+2026-03-07 09:48:52,054 [INFO] crawler: [bizinfo] API 호출 — 페이지 3, 100건
+2026-03-07 09:48:52,894 [INFO] crawler: [bizinfo] API 호출 — 페이지 4, 100건
+2026-03-07 09:48:53,693 [INFO] crawler: [bizinfo] API 호출 — 페이지 5, 100건
+2026-03-07 09:48:54,516 [INFO] crawler: [bizinfo] API 호출 — 페이지 6, 100건
+2026-03-07 09:48:55,301 [INFO] crawler: [bizinfo] API 호출 — 페이지 7, 100건
+2026-03-07 09:48:56,106 [INFO] crawler: [bizinfo] API 호출 — 페이지 8, 100건
+2026-03-07 09:48:56,911 [INFO] crawler: [bizinfo] API 호출 — 페이지 9, 100건
+2026-03-07 09:48:57,758 [INFO] crawler: [bizinfo] API 호출 — 페이지 10, 100건
+2026-03-07 09:48:58,447 [INFO] crawler: [bizinfo] API 호출 — 페이지 11, 10건
+2026-03-07 09:48:58,448 [INFO] crawler: [bizinfo] API 결과 없음 — HTML 폴백
+2026-03-07 09:48:58,740 [ERROR] crawler: [bizinfo] HTML 폴백 실패: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+2026-03-07 09:48:58,742 [INFO] crawler: [bizinfo] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:48:58,743 [ERROR] crawler: [bizinfo] 오류: name '_now_iso' is not defined
+2026-03-07 09:50:27,112 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 09:50:27,341 [INFO] main: === 전체 파이프라인 시작 ===
+2026-03-07 09:50:27,347 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-07 09:50:27,724 [INFO] crawler: [bizinfo] API 호출 — 페이지 1, 100건
+2026-03-07 09:50:28,544 [INFO] crawler: [bizinfo] API 호출 — 페이지 2, 100건
+2026-03-07 09:50:29,373 [INFO] crawler: [bizinfo] API 호출 — 페이지 3, 100건
+2026-03-07 09:50:30,164 [INFO] crawler: [bizinfo] API 호출 — 페이지 4, 100건
+2026-03-07 09:50:30,976 [INFO] crawler: [bizinfo] API 호출 — 페이지 5, 100건
+2026-03-07 09:50:31,836 [INFO] crawler: [bizinfo] API 호출 — 페이지 6, 100건
+2026-03-07 09:50:32,631 [INFO] crawler: [bizinfo] API 호출 — 페이지 7, 100건
+2026-03-07 09:50:33,442 [INFO] crawler: [bizinfo] API 호출 — 페이지 8, 100건
+2026-03-07 09:50:34,264 [INFO] crawler: [bizinfo] API 호출 — 페이지 9, 100건
+2026-03-07 09:50:35,141 [INFO] crawler: [bizinfo] API 호출 — 페이지 10, 100건
+2026-03-07 09:50:35,813 [INFO] crawler: [bizinfo] API 호출 — 페이지 11, 10건
+2026-03-07 09:50:35,814 [INFO] crawler: [bizinfo] API 결과 없음 — HTML 폴백
+2026-03-07 09:50:36,112 [INFO] crawler: [bizinfo] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:36,171 [INFO] crawler: [cloudsup] 크롤링 시작
+2026-03-07 09:50:36,432 [INFO] crawler: [cloudsup] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:36,449 [INFO] crawler: [nipa] 크롤링 시작
+2026-03-07 09:50:36,450 [WARNING] crawler: [nipa] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:36,560 [INFO] crawler: [nipa] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:36,621 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 09:50:36,623 [WARNING] crawler: [nia] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:37,249 [INFO] crawler: [nia] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:37,333 [INFO] crawler: [kdata] 크롤링 시작
+2026-03-07 09:50:37,334 [WARNING] crawler: [kdata] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:37,650 [INFO] crawler: [kdata] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:37,748 [INFO] crawler: [smtech] 크롤링 시작
+2026-03-07 09:50:38,302 [INFO] crawler: [smtech] 완료 - 15건 수집, 0건 신규
+2026-03-07 09:50:38,315 [INFO] crawler: [mssmiv] 크롤링 시작
+2026-03-07 09:50:38,687 [INFO] crawler: [mssmiv] 완료 - 15건 수집, 0건 신규
+2026-03-07 09:50:38,744 [INFO] crawler: [iitp] 크롤링 시작
+2026-03-07 09:50:38,887 [INFO] crawler: [iitp] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:39,021 [INFO] crawler: [kisa] 크롤링 시작
+2026-03-07 09:50:39,711 [INFO] crawler: [kisa] 완료 - 10건 수집, 0건 신규
+2026-03-07 09:50:39,732 [INFO] crawler: [kiat] 크롤링 시작
+2026-03-07 09:50:39,733 [WARNING] crawler: [kiat] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:39,901 [INFO] crawler: [kiat] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:39,954 [INFO] crawler: [iris] 크롤링 시작
+2026-03-07 09:50:40,108 [INFO] crawler: [iris] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:40,163 [INFO] crawler: [kstartup] 크롤링 시작
+2026-03-07 09:50:40,165 [WARNING] crawler: [kstartup] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:40,605 [INFO] crawler: [kstartup] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:40,695 [INFO] crawler: [koneps] 크롤링 시작
+2026-03-07 09:50:40,696 [WARNING] crawler: [koneps] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:40,824 [INFO] crawler: [koneps] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:40,906 [INFO] crawler: [semas] 크롤링 시작
+2026-03-07 09:50:40,908 [WARNING] crawler: [semas] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:41,315 [INFO] crawler: [semas] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:41,388 [INFO] crawler: [smartfactory] 크롤링 시작
+2026-03-07 09:50:41,390 [WARNING] crawler: [smartfactory] playwright 미설치. HTML 폴백 사용.
+2026-03-07 09:50:41,468 [INFO] crawler: [smartfactory] 완료 - 0건 수집, 0건 신규
+2026-03-07 09:50:41,478 [INFO] matcher: 매칭 대상 공고: 126건
+2026-03-07 09:50:41,481 [INFO] matcher: 임계값(40) 이상 매칭 없음
+2026-03-07 09:50:45,253 [INFO] notifier: 이메일 발송 완료 → minho@jiran.com, seokmin@jiran.com, jc.park@jiran.com
+2026-03-07 09:50:45,253 [INFO] main: === 전체 파이프라인 완료 ===
+2026-03-07 09:52:26,145 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 09:52:26,406 [INFO] crawler: [bizinfo] 크롤링 시작
+2026-03-07 09:52:26,752 [INFO] crawler: [bizinfo] API 호출 — 페이지 1, 100건
+2026-03-07 09:52:27,598 [INFO] crawler: [bizinfo] API 호출 — 페이지 2, 100건
+2026-03-07 09:52:28,462 [INFO] crawler: [bizinfo] API 호출 — 페이지 3, 100건
+2026-03-07 09:52:29,346 [INFO] crawler: [bizinfo] API 호출 — 페이지 4, 100건
+2026-03-07 09:52:30,225 [INFO] crawler: [bizinfo] API 호출 — 페이지 5, 100건
+2026-03-07 09:52:31,062 [INFO] crawler: [bizinfo] API 호출 — 페이지 6, 100건
+2026-03-07 09:52:31,970 [INFO] crawler: [bizinfo] API 호출 — 페이지 7, 100건
+2026-03-07 09:52:32,808 [INFO] crawler: [bizinfo] API 호출 — 페이지 8, 100건
+2026-03-07 09:52:33,646 [INFO] crawler: [bizinfo] API 호출 — 페이지 9, 100건
+2026-03-07 09:52:34,507 [INFO] crawler: [bizinfo] API 호출 — 페이지 10, 100건
+2026-03-07 09:52:35,195 [INFO] crawler: [bizinfo] API 호출 — 페이지 11, 10건
+2026-03-07 09:52:50,255 [INFO] crawler: [bizinfo] 완료 - 1010건 수집, 1009건 신규
+2026-03-07 09:52:54,833 [INFO] matcher: 매칭 대상 공고: 1135건
+2026-03-07 09:52:54,836 [INFO] matcher: [매칭] [전남] 2026년 지역 주도형 AI 대전환 사업 AI → ['오피스에이전트']
+2026-03-07 09:52:54,837 [INFO] matcher: [매칭] [대구] 2026년 데이터 기반 의료 AI 제품화 종합 → ['오피스에이전트']
+2026-03-07 09:52:54,837 [INFO] matcher: [매칭] [대구] 2026년 데이터 기반 의료 AI 제품화 종합 → ['오피스에이전트']
+2026-03-07 09:52:54,840 [INFO] matcher: [매칭] [서울] 2026년 게임콘텐츠 사업화 지원사업 참가기업 → ['오피스에이전트']
+2026-03-07 09:52:54,879 [INFO] matcher: [매칭] [경기] 2026년 중국서부국제투자무역상담회 AI 혁신 → ['오피스에이전트']
+2026-03-07 09:52:54,880 [INFO] matcher: [매칭] AI선박 특화 플랫폼 및 애플리케이션 개발ㆍ실증 사업  → ['오피스에이전트']
+2026-03-07 09:52:54,881 [INFO] matcher: [매칭] [경북] 포항시 2026년 제조DX멘토단 활용지원(사후 → ['오피스에이전트']
+2026-03-07 09:52:54,881 [INFO] matcher: [매칭] 2026년 AI특화 콘텐츠 창작자 양성 지원 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,883 [INFO] matcher: [매칭] 2026년 데이터 인프라 구축사업 운영기관 모집 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,884 [INFO] matcher: [매칭] [전북] 2026년 전북형 스마트 제조혁신 프로젝트 모 → ['오피스에이전트']
+2026-03-07 09:52:54,887 [INFO] matcher: [매칭] 2026년 SaaS 개발환경 지원 수요기업 모집공고 → ['오피스에이전트', '오피스넥스트']
+2026-03-07 09:52:54,890 [INFO] matcher: [매칭] [경북] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,892 [INFO] matcher: [매칭] [경북] 2026년 스마트공장(기초단계) 구축지원사업  → ['오피스에이전트']
+2026-03-07 09:52:54,894 [INFO] matcher: [매칭] 2026년 피지컬AI 수퍼커넥트 in Silicon V → ['오피스에이전트']
+2026-03-07 09:52:54,894 [INFO] matcher: [매칭] [경남] 진주시 2026년 혁신도시 공공기관 연관산업  → ['나모에디터']
+2026-03-07 09:52:54,895 [INFO] matcher: [매칭] 2026년 뉴콘텐츠기업지원센터 멤버십 참가기업 모집 공 → ['오피스에이전트']
+2026-03-07 09:52:54,895 [INFO] matcher: [매칭] 2026년 싱가포르 아시아 의료기기 박람회(Medica → ['오피스에이전트']
+2026-03-07 09:52:54,896 [INFO] matcher: [매칭] [경남] 사천시ㆍ진주시 2026년 디지털전환(DX) 컨 → ['오피스에이전트']
+2026-03-07 09:52:54,896 [INFO] matcher: [매칭] 2026년 인공지능 콘텐츠 제작지원(협력형) 수요기업  → ['오피스에이전트']
+2026-03-07 09:52:54,897 [INFO] matcher: [매칭] 2026년 AI 응용제품 신속 상용화 지원사업 신규과제 → ['오피스에이전트']
+2026-03-07 09:52:54,898 [INFO] matcher: [매칭] AI기반 Age-Tech 산업 중심의 디지털의료제품 지 → ['오피스에이전트']
+2026-03-07 09:52:54,899 [INFO] matcher: [매칭] 2026년 뿌리 AI공정 시스템 구축사업 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,901 [INFO] matcher: [매칭] [충북] 지능형첨단부품산업의 디지털전환 거점 구축 사업 → ['오피스에이전트']
+2026-03-07 09:52:54,902 [INFO] matcher: [매칭] [세종] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,902 [INFO] matcher: [매칭] [경기] 2026년 스마트공장 디지털전환 견학공장 기업 → ['오피스에이전트']
+2026-03-07 09:52:54,904 [INFO] matcher: [매칭] [경기] 2026년 스마트공장 구축 및 컨설팅ㆍ제조AI → ['오피스에이전트']
+2026-03-07 09:52:54,904 [INFO] matcher: [매칭] [강원] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,904 [INFO] matcher: [매칭] [강원] 2026년 강원형 스마트공장(기초단계) 구축지 → ['오피스에이전트']
+2026-03-07 09:52:54,905 [INFO] matcher: [매칭] [대구] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,905 [INFO] matcher: [매칭] [부산] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,905 [INFO] matcher: [매칭] [경기] 북부 2026년 제조DX멘토단 활용지원(사후관 → ['오피스에이전트']
+2026-03-07 09:52:54,905 [INFO] matcher: [매칭] [광주] 2026년 제조DX멘토단 활용지원(사후관리)  → ['오피스에이전트']
+2026-03-07 09:52:54,905 [INFO] matcher: [매칭] 2026년 AI 역기능 대응 기술 실증ㆍ확산사업(R&D → ['오피스에이전트']
+2026-03-07 09:52:54,906 [INFO] matcher: [매칭] 2026년 AI 보안 유망기업 육성 지원사업 참여기업  → ['오피스에이전트', '오피스키퍼']
+2026-03-07 09:52:54,907 [INFO] matcher: [매칭] 2026년 디지털 혁신 중견기업 육성사업(기업지원) 신 → ['오피스에이전트']
+2026-03-07 09:52:54,908 [INFO] matcher: [매칭] [전북] 2026년 제조DX멘토단 활용지원(사후관리)사 → ['오피스에이전트']
+2026-03-07 09:52:54,910 [INFO] matcher: [매칭] 2026년 지역 주도형 AI 대전환 사업 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,910 [INFO] matcher: [매칭] [경기] 시흥시 2026년 AIㆍDX 기반 기업 역량  → ['오피스에이전트']
+2026-03-07 09:52:54,915 [INFO] matcher: [매칭] [서울] 2026년 1분기 서울기업 대상 AI 협업툴  → ['오피스에이전트', '오피스넥스트']
+2026-03-07 09:52:54,918 [INFO] matcher: [매칭] 2026년 디지털혁신기술국제공동연구사업 신규지원 대상과 → ['오피스에이전트']
+2026-03-07 09:52:54,919 [INFO] matcher: [매칭] [광주] 인공지능 유치기업 보조금 지원사업 모집 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,922 [INFO] matcher: [매칭] [울산] 2026년 중소기업 AI인프라 육성자금 지원계 → ['오피스에이전트']
+2026-03-07 09:52:54,923 [INFO] matcher: [매칭] 2026년 제조DX멘토단 활용지원사업 통합 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,924 [INFO] matcher: [매칭] [울산] 2025년 2차 AI기반 PoC 실증 지원사업 → ['오피스에이전트']
+2026-03-07 09:52:54,925 [INFO] matcher: [매칭] 중소제조 특화 Multi AI Agent 개발 (R&D → ['오피스에이전트']
+2026-03-07 09:52:54,925 [INFO] matcher: [매칭] AI 응용제품 신속 상용화(2026년 스마트 제조혁신  → ['오피스에이전트']
+2026-03-07 09:52:54,926 [INFO] matcher: [매칭] 제조 DX멘토단 활용지원(2026년 스마트 제조혁신 지 → ['오피스에이전트']
+2026-03-07 09:52:54,926 [INFO] matcher: [매칭] 클라우드 제조솔루션(2026년 스마트 제조혁신 지원사업 → ['오피스에이전트']
+2026-03-07 09:52:54,926 [INFO] matcher: [매칭] 자동화지원_자동화 공정 구축(2026년 스마트 제조혁신 → ['오피스에이전트']
+2026-03-07 09:52:54,926 [INFO] matcher: [매칭] 자동화지원_제조로봇 도입(2026년 스마트 제조혁신 지 → ['오피스에이전트']
+2026-03-07 09:52:54,926 [INFO] matcher: [매칭] 스마트공장 구축_디지털 협업공장(2026년 스마트 제조 → ['오피스에이전트', '오피스넥스트']
+2026-03-07 09:52:54,927 [INFO] matcher: [매칭] 스마트공장 구축_대중소 상생형(AI트랙) 스마트공장(2 → ['오피스에이전트']
+2026-03-07 09:52:54,927 [INFO] matcher: [매칭] 스마트공장 구축_제조AI특화 스마트공장 (자율형공장 A → ['오피스에이전트']
+2026-03-07 09:52:54,927 [INFO] matcher: [매칭] 2026년 스마트 제조혁신 지원사업 통합 공고 → ['오피스에이전트']
+2026-03-07 09:52:54,939 [INFO] matcher: 매칭 결과 58건 저장 완료
+2026-03-07 09:52:55,356 [INFO] notifier: 미리보기 저장: data\email_preview_20260307_095255.html
+2026-03-07 10:16:11,506 [INFO] database: DB 초기화 완료: subsidy_crawler.db
+2026-03-07 10:16:11,850 [INFO] crawler: [nia] 크롤링 시작
+2026-03-07 10:16:27,775 [INFO] crawler: [nia] 완료 - 18건 수집, 1건 신규
+2026-03-07 10:16:34,565 [INFO] matcher: 매칭 대상 공고: 1082건
+2026-03-07 10:16:34,607 [INFO] matcher: 임계값(40) 이상 매칭 없음
+2026-03-07 10:16:35,070 [INFO] notifier: 미리보기 저장: data\email_preview_20260307_101635.html
+2026-03-09 00:39:51,706 [INFO] notifier: 이메일 발송 완료 → minho@jiran.com, seokmin@jiran.com, jc.park@jiran.com

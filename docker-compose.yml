@@ -1,0 +1,16 @@
+services:
+  crawler:
+    build: .
+    container_name: subsidy-crawler
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./subsidy_crawler.db:/app/subsidy_crawler.db
+      - ./crawler.log:/app/crawler.log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

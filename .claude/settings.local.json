@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(py:*)",
+      "Bash(venv/Scripts/python:*)",
+      "Bash(docker compose:*)"
+    ]
+  }
+}
