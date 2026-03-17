@@ -21,7 +21,7 @@ DB_PATH = os.getenv("DB_PATH", "subsidy_crawler.db")
 DATA_DIR = os.getenv("DATA_DIR", "data")
 
 # ─── 매칭 ────────────────────────────────────────────────────
-MATCH_SCORE_THRESHOLD = int(os.getenv("MATCH_SCORE_THRESHOLD", "40"))
+MATCH_SCORE_THRESHOLD = int(os.getenv("MATCH_SCORE_THRESHOLD", "50"))
 
 # ─── 크롤링 사이트 (15개) ────────────────────────────────────
 CRAWL_SITES = [
