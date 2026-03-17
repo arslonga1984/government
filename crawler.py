@@ -27,10 +27,22 @@ HEADERS = {
 # 사이트별 Playwright 목록 셀렉터 매핑
 LIST_SELECTORS = {
     "kstartup": {
-        "container": "#bizPbancList li",
-        "title": ".tit, .title, strong, h3, h4",
+        "container": ".bizpbanc-list li, .list-wrap li, ul.biz-list li, .card-list li",
+        "title": ".tit, .title, strong, h3, h4, .subject",
         "link": "a",
-        "deadline": ".date, .deadline, .period",
+        "deadline": ".date, .deadline, .period, .end-date",
+    },
+    "iitp": {
+        "container": ".board-list li, .list_area li, table tbody tr",
+        "title": ".tit, .title, a, td:nth-child(2)",
+        "link": "a",
+        "deadline": ".date, td:last-child",
+    },
+    "kisa": {
+        "container": "table tbody tr, .board-list li",
+        "title": ".tit, .title, a, td:nth-child(2)",
+        "link": "a",
+        "deadline": "td:last-child, .date",
     },
 }
 

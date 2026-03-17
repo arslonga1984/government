@@ -40,7 +40,7 @@ CRAWL_SITES = [
         "id": "cloudsup",
         "name": "클라우드서비스 지원포털",
         "url": "https://www.cloudsup.or.kr",
-        "list_url": "https://www.cloudsup.or.kr/cloud/business.jsp",
+        "list_url": "https://www.cloudsup.or.kr/information/notice",
         "crawler_type": "html",
         "org": "과기정통부 / NIPA",
         "priority": 1,
@@ -49,7 +49,7 @@ CRAWL_SITES = [
         "id": "nipa",
         "name": "정보통신산업진흥원 (NIPA)",
         "url": "https://www.nipa.kr",
-        "list_url": "https://www.nipa.kr/biz/list.do",
+        "list_url": "https://www.nipa.kr/biz/listBiz.do",
         "crawler_type": "playwright",
         "org": "과기정통부",
         "priority": 1,
@@ -67,8 +67,8 @@ CRAWL_SITES = [
         "id": "kdata",
         "name": "한국데이터산업진흥원 (K-DATA)",
         "url": "https://www.kdata.or.kr",
-        "list_url": "https://www.kdata.or.kr/kr/board/notice/boardList.do",
-        "crawler_type": "playwright",
+        "list_url": "https://www.kdata.or.kr/kr/board/notice_01/boardList.do",
+        "crawler_type": "html",
         "org": "과기정통부",
         "priority": 1,
     },
@@ -97,7 +97,7 @@ CRAWL_SITES = [
         "name": "정보통신기획평가원 (IITP)",
         "url": "https://www.iitp.kr",
         "list_url": "https://www.iitp.kr/kr/1/business/list.it",
-        "crawler_type": "html",
+        "crawler_type": "playwright",
         "org": "과기정통부",
         "priority": 2,
     },
@@ -106,7 +106,7 @@ CRAWL_SITES = [
         "name": "한국인터넷진흥원 (KISA)",
         "url": "https://www.kisa.or.kr",
         "list_url": "https://www.kisa.or.kr/401",
-        "crawler_type": "html",
+        "crawler_type": "playwright",
         "org": "과기정통부",
         "priority": 2,
     },
@@ -119,17 +119,7 @@ CRAWL_SITES = [
         "org": "산업통상자원부",
         "priority": 2,
     },
-    {
-        "id": "iris",
-        "name": "IRIS 국가연구개발사업 통합관리시스템",
-        "url": "https://www.iris.go.kr",
-        "list_url": "https://www.iris.go.kr/front/board/retrieveBoardList.do",
-        "crawler_type": "html",
-        "org": "과기정통부",
-        "priority": 2,
-    },
-
-    # ★★☆ 3순위 — 조달 / 특화 지원
+    # ★★☆ 3순위 — 창업 / 소상공인 지원
     {
         "id": "kstartup",
         "name": "K-Startup 창업지원포털",
@@ -137,15 +127,6 @@ CRAWL_SITES = [
         "list_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
         "crawler_type": "playwright",
         "org": "중소벤처기업부",
-        "priority": 3,
-    },
-    {
-        "id": "koneps",
-        "name": "나라장터 (KONEPS)",
-        "url": "https://www.g2b.go.kr",
-        "list_url": "https://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=/pt/menu/frameBidPbancList.do",
-        "crawler_type": "playwright",
-        "org": "조달청",
         "priority": 3,
     },
     {
@@ -157,15 +138,10 @@ CRAWL_SITES = [
         "org": "중소벤처기업부",
         "priority": 3,
     },
-    {
-        "id": "smartfactory",
-        "name": "스마트공장 사업관리시스템",
-        "url": "https://www.smart-factory.kr",
-        "list_url": "https://www.smart-factory.kr",
-        "crawler_type": "playwright",
-        "org": "중소벤처기업부",
-        "priority": 3,
-    },
+    # 제거된 사이트:
+    # - iris: 로그인 필수 (인증 불가)
+    # - koneps: SSO 인증 필수 (공개 접근 불가)
+    # - smartfactory: 완전 SPA (URL 없음)
 ]
 
 # ─── 제품 & 키워드 (5개 제품) ────────────────────────────────

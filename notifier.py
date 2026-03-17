@@ -20,22 +20,19 @@ from database import get_unnotified_matches, mark_notified
 logger = logging.getLogger(__name__)
 
 SITE_LABEL = {
-    "bizinfo":      "기업마당",
-    "cloudsup":     "클라우드서비스 지원포털",
-    "nipa":         "NIPA",
-    "nia":          "NIA",
-    "kdata":        "K-DATA",
-    "smtech":       "TIPA",
-    "mssmiv":       "SMIV",
-    "iitp":         "IITP",
-    "kisa":         "KISA",
-    "kiat":         "KIAT",
-    "iris":         "IRIS",
-    "kstartup":     "K-Startup",
-    "koneps":       "나라장터",
-    "semas":        "소상공인진흥공단",
-    "smartfactory": "스마트공장",
-    "mss":          "중소벤처기업부",
+    "bizinfo":  "기업마당",
+    "cloudsup": "클라우드서비스 지원포털",
+    "nipa":     "NIPA",
+    "nia":      "NIA",
+    "kdata":    "K-DATA",
+    "smtech":   "TIPA",
+    "mssmiv":   "SMIV",
+    "iitp":     "IITP",
+    "kisa":     "KISA",
+    "kiat":     "KIAT",
+    "kstartup": "K-Startup",
+    "semas":    "소상공인진흥공단",
+    "mss":      "중소벤처기업부",
 }
 
 PRODUCT_COLOR = {
