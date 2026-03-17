@@ -81,7 +81,7 @@ def save_match_results(results: list[dict]):
         )
 
 
-def get_unnotified_matches() -> list[dict]:
+def get_unnotified_matches(min_score: float = 40.0) -> list[dict]:
     with get_conn() as conn:
         rows = conn.execute(
             """SELECT a.title, a.url, a.deadline, a.org, a.source_site,
@@ -89,7 +89,9 @@ def get_unnotified_matches() -> list[dict]:
                FROM match_results m
                JOIN announcements a ON a.content_hash = m.announcement_hash
                WHERE a.notified = 0
-               ORDER BY m.match_score DESC"""
+                 AND m.match_score >= ?
+               ORDER BY m.match_score DESC""",
+            (min_score,),
         ).fetchall()
         return [dict(r) for r in rows]
 

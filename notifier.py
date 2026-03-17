@@ -9,6 +9,7 @@ from email.mime.text import MIMEText
 from config.settings import (
     DATA_DIR,
     EMAIL_RECIPIENTS,
+    MATCH_SCORE_THRESHOLD,
     SENDER_EMAIL,
     SENDER_PASSWORD,
     SMTP_PORT,
@@ -258,7 +259,7 @@ def _send_email(subject: str, html_body: str, recipients: list[str]):
 
 
 def run_notify():
-    matches = get_unnotified_matches()
+    matches = get_unnotified_matches(min_score=MATCH_SCORE_THRESHOLD)
     if not matches:
         logger.info("발송할 새 매칭 결과가 없습니다.")
         return
@@ -284,7 +285,7 @@ def run_notify():
 def run_preview():
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    matches = get_unnotified_matches()
+    matches = get_unnotified_matches(min_score=MATCH_SCORE_THRESHOLD)
     if not matches:
         logger.info("미리보기할 매칭 결과가 없습니다.")
         return

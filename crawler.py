@@ -1,6 +1,7 @@
 import hashlib
 import logging
 import re
+import signal
 import time
 
 import requests
@@ -13,6 +14,7 @@ from utils import now_iso
 logger = logging.getLogger(__name__)
 
 PAGE_SIZE = 100
+SITE_TIMEOUT_SEC = 120  # 사이트당 최대 2분
 
 HEADERS = {
     "User-Agent": (
@@ -39,9 +41,13 @@ def _make_hash(title: str, source_site: str) -> str:
 
 
 def _abs_url(href: str, base_url: str) -> str:
-    if href and not href.startswith("http"):
-        return base_url + href
-    return href
+    if not href:
+        return ""
+    if href.startswith("http"):
+        return href
+    base = base_url.rstrip("/")
+    path = href if href.startswith("/") else "/" + href
+    return base + path
 
 
 def _build_item(title: str, site: dict, href: str, deadline: str,
@@ -251,12 +257,14 @@ def crawl_playwright(site: dict) -> list[dict]:
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True)
         page = browser.new_page(user_agent=HEADERS["User-Agent"])
+        # 모든 작업에 기본 타임아웃 15초 적용 (hang 방지)
+        page.set_default_timeout(15000)
         try:
-            page.goto(site["list_url"], timeout=60000)
+            page.goto(site["list_url"], timeout=60000, wait_until="domcontentloaded")
             try:
-                page.wait_for_load_state("networkidle", timeout=30000)
+                page.wait_for_load_state("networkidle", timeout=20000)
             except Exception:
-                page.wait_for_timeout(5000)
+                page.wait_for_timeout(3000)
 
             sel_cfg = LIST_SELECTORS.get(site["id"])
             if sel_cfg:
@@ -327,7 +335,16 @@ def run_crawl(site_filter: str = None):
         log_id = log_crawl_start(site["id"], started_at)
         logger.info("[%s] 크롤링 시작", site["id"])
 
+        def _timeout_handler(signum, frame):
+            raise TimeoutError(f"[{site['id']}] {SITE_TIMEOUT_SEC}초 초과")
+
         try:
+            # Unix 환경에서만 SIGALRM 사용 (Linux/macOS GitHub Actions)
+            use_signal = hasattr(signal, "SIGALRM")
+            if use_signal:
+                signal.signal(signal.SIGALRM, _timeout_handler)
+                signal.alarm(SITE_TIMEOUT_SEC)
+
             crawler_type = site.get("crawler_type", "html")
             if crawler_type == "api":
                 items = crawl_bizinfo_api(site)
@@ -339,6 +356,9 @@ def run_crawl(site_filter: str = None):
             else:
                 items = crawl_html(site)
 
+            if use_signal:
+                signal.alarm(0)  # 타이머 해제
+
             new_count = 0
             for item in items:
                 if upsert_announcement(item):
@@ -347,6 +367,13 @@ def run_crawl(site_filter: str = None):
             logger.info("[%s] 완료 - %d건 수집, %d건 신규", site["id"], len(items), new_count)
             log_crawl_finish(log_id, "success", len(items), new_count, now_iso())
 
+        except TimeoutError as e:
+            logger.warning("%s — 다음 사이트로 건너뜀", e)
+            log_crawl_finish(log_id, "timeout", 0, 0, now_iso(), str(e))
+            if hasattr(signal, "SIGALRM"):
+                signal.alarm(0)
         except Exception as e:
             logger.error("[%s] 오류: %s", site["id"], e)
             log_crawl_finish(log_id, "error", 0, 0, now_iso(), str(e))
+            if hasattr(signal, "SIGALRM"):
+                signal.alarm(0)
