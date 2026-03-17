@@ -3,6 +3,7 @@ name: 정부 지원사업 자동 크롤링 및 이메일 발송
 on:
   schedule:
     - cron: '0 1 * * 2,5'  # 매주 화/금 오전 10시 (KST)
+    - cron: '0 6 18 3 *'   # 임시: 3월 18일 오후 3시 KST (테스트용, 이후 제거)
   workflow_dispatch:         # 수동 실행 버튼 (테스트용)
 
 jobs:
