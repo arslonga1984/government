@@ -228,8 +228,7 @@ def _build_html(matches: list[dict]) -> str:
                   border-radius:0 0 12px 12px;padding:18px 24px;text-align:center">
         <div style="font-size:12px;color:#94A3B8;line-height:1.8">
           이 메일은 정부 지원사업 자동 매칭 크롤러에 의해 자동 발송됩니다.<br>
-          매주 <strong>화요일 · 금요일 오전 10시</strong> 발송 &nbsp;|&nbsp;
-          수신 설정: subsidy-admin@jiransoft.co.kr
+          매주 <strong>화요일 · 금요일 오전 10시</strong> 발송
         </div>
       </div>
     </td></tr>
